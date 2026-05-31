@@ -4,7 +4,7 @@ import { onMounted, onBeforeUnmount, ref } from "vue";
 import { useRouter } from "vitepress";
 
 const router = useRouter();
-const goHome = () => router.go("/");
+const goHome = () => router.go("/VitePressBlog");
 
 const count = ref(0);
 const target = 404;
