@@ -5,6 +5,7 @@ import { useRouter } from "vitepress";
 
 const router = useRouter();
 const goHome = () => router.go("/VitePressBlog");
+const bgImage = `url(https://cdn.jsdelivr.net/gh/kongjianguan/images@master/109932844.png)`;
 
 const count = ref(0);
 const target = 404;
@@ -66,7 +67,7 @@ onMounted(() => {
   width: 100%;
   display: flex;
   align-items: stretch;
-  background-image: url("/VitePressBlog/images/140014451_p0.jpg");
+  background-image: v-bind(bgImage);
   background-size: cover;
   background-repeat: no-repeat;
   color: rgba(255, 255, 255, 0.87);
