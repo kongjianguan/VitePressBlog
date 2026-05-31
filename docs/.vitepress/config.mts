@@ -58,30 +58,30 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      {
-        text: '💻 编程',
-        items: [
-          {
-            text: '🎨 前端',
-            items: [
-              { text: 'Node', link: '/Front-End/Node/' },
-            ]
-          },
-        ]
-      },
-      {
-        text: '🛠️软件',
-        items: []
-      },
+      // {
+      //   text: '💻 编程',
+      //   items: [
+      //     {
+      //       text: '🎨 前端',
+      //       items: [
+      //         { text: 'Node', link: '/Front-End/Node/' },
+      //       ]
+      //     },
+      //   ]
+      // },
+      // {
+      //   text: '🛠️软件',
+      //   items: []
+      // },
 
-      {
-        text: '📚 学习',
-        items: []
-      },
-      {
-        text: '🎮 娱乐',
-        items: []
-      },
+      // {
+      //   text: '📚 学习',
+      //   items: []
+      // },
+      // {
+      //   text: '🎮 娱乐',
+      //   items: []
+      // },
 
       {
         text: '👨‍💻 关于',

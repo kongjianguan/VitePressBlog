@@ -1,6 +1,6 @@
 // 博客背景图地址列表，也是默认封面图地址列表，导出给 teekConfig.ts 使用
 
-export const Imgs: Array<string> = [
+export const oldImgs: Array<string> = [
   // '/images/129487999_p0.jpg', // 菲比
   '/images/133464975_p0.jpg', // 大昔涟
   '/images/X_at_226083260Bubai-20260513.jpg', // 荧妹
@@ -141,7 +141,7 @@ export const Imgs: Array<string> = [
   '/images/131998699_p0.jpg', // 缇宝
 
   // 日常
-  '/images/backgruond-city.jpg',
+  // '/images/backgruond-city.jpg',
 
   // re: zero
   '/images/re-background.jpg',
@@ -176,7 +176,14 @@ export const Imgs: Array<string> = [
   '/images/690112.jpg',
   '/images/bingguo.jpg',
 
-  '/images/walk-in-space.png', // 太空
-  '/images/miaomiao.jpg', // 妙妙！
   '/images/MEME-Kaofish.jpg', // 烤鱼
+
+  
+    ''
+]
+export const Imgs:Array<string> = [
+  // 某科学的超电磁炮
+  '/images/[あいむaimu] 99605266.png', //四人组
+  '/images/[黒羽鏡夜] 109932844.png', //蜂琴黑三人喝茶
+  '/images/美琴微笑回首_Real-ESRGANv3-anime_0720_185651.png',
 ]
