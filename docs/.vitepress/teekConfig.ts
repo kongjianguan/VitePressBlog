@@ -7,7 +7,7 @@ import { vitepressPluginLegend } from 'vitepress-plugin-legend';
 export const teekConfig = defineTeekConfig({
 
   teekTheme: true,          // 启用 teek 主题
-  loading: "博客加载中...", // Loading 动画，可直接配置 Loading 文案.为 false 则关闭
+  loading: "正在开门...", // Loading 动画，可直接配置 Loading 文案.为 false 则关闭
   pageStyle: "segment-nav",          // 文章页的样式风格 default, card, segment, card-nav, segment-nav
   homeCardListPosition: "left", // 首页卡片栏列表位置
 
@@ -31,7 +31,7 @@ export const teekConfig = defineTeekConfig({
       "为世界上一切美好而战！",
       ], // 描述信息
     switchTime: 6000, // 描述信息切换间隔时间，单位：毫秒。descStyle 为 switch 时生效
-    switchShuffle: false, // 描述信息是否随机切换，为 false 时按顺序切换。descStyle 为 switch 时生效
+    switchShuffle: true, // 描述信息是否随机切换，为 false 时按顺序切换。descStyle 为 switch 时生效
   },
 
   // 文章列表配置 https://vp.teek.top/reference/post-config.html#post

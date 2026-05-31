@@ -1,7 +1,7 @@
 // 博客背景图地址列表，也是默认封面图地址列表，导出给 teekConfig.ts 使用
-// 设置 LOCALIMGSRC=1 则使用本地路径，否则使用 jsDelivr CDN
+// 设置 LOCALIMGSRC=1 则使用本地路径，否则使用 JSDMirror CDN
 
-const imgBase = process.env.LOCALIMGSRC === '1' ? '/images' : 'https://cdn.jsdelivr.net/gh/kongjianguan/images@master';
+const imgBase = process.env.LOCALIMGSRC === '1' ? '/images' : 'https://cdn.jsdmirror.com/gh/kongjianguan/images';
 
 export const OldImgs: Array<string> = [
   // `${imgBase}/129487999_p0.jpg`, // 菲比

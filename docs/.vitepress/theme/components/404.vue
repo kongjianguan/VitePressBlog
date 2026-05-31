@@ -5,7 +5,7 @@ import { useRouter } from "vitepress";
 
 const router = useRouter();
 const goHome = () => router.go("/VitePressBlog");
-const bgImage = `url(https://cdn.jsdelivr.net/gh/kongjianguan/images@master/109932844.png)`;
+const bgImage = `url(https://cdn.jsdmirror.com/gh/kongjianguan/images/109932844.png)`;
 
 const count = ref(0);
 const target = 404;
