@@ -59,7 +59,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '💻 编程',
+        text: '编程',
         items: [
           {
             text: '☁💡🎈 ACM',
@@ -84,7 +84,7 @@ export default defineConfig({
       // },
 
       {
-        text: '👨‍💻 关于',
+        text: '关于',
         items: [
           {
             text: '博客',

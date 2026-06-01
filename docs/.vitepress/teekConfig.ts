@@ -144,8 +144,8 @@ export const teekConfig = defineTeekConfig({
     // 访问量、访客数统计配置
     statistics: {
       provider: "busuanzi", // 网站流量统计提供商
-      siteView: false, // 是否开启首页的访问量和排名统计
-      pageView: false, // 是否开启文章页的浏览量统计
+      siteView: true, // 是否开启首页的访问量和排名统计
+      pageView: true, // 是否开启文章页的浏览量统计
       tryRequest: false, // 如果请求网站流量统计接口失败，是否重试
       tryCount: 5, // 重试次数，仅当 tryRequest 为 true 时有效
       tryIterationTime: 2000, // 重试间隔时间，单位：毫秒，仅当 tryRequest 为 true 时有效
