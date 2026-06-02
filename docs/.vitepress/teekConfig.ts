@@ -74,7 +74,7 @@ export const teekConfig = defineTeekConfig({
     // 博主信息，显示在首页左边第一个卡片
   blogger: {
     name: "kongjianguan", // 博主昵称
-    slogan: "学生, 编程爱好者, 看动漫, 看ACG live", // 博主签名
+    slogan: "学生, 编程爱好者, 爱看动漫和ACG Live, 有点弱鸡但正在努力中的的ACMer", // 博主签名
     avatar: "https://cdn.jsdmirror.com/gh/kongjianguan/images/avatar.jpg", // 博主头像（GitHub头像）
     shape: "circle", // 头像风格
     circleSize: 100, // 头像大小
@@ -88,9 +88,9 @@ export const teekConfig = defineTeekConfig({
     
     imgSrc: Imgs, // 背景图地址，支持单张或多张（数组形式）
     imgOpacity: 1, // 背景图透明度，选值 0.1 ~ 1.0
-    imgInterval: 10000, //  当有多张背景图时（imgSrc 为数组），设置切换时间，单位：毫秒
+    imgInterval: 30000, //  当有多张背景图时（imgSrc 为数组），设置切换时间，单位：毫秒
     imgShuffle: true, // 是否随机切换
-    mask: false // 背景图遮罩
+    mask: true // 背景图遮罩
   },   
 
   // 精选文章卡片配置
