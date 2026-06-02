@@ -1,5 +1,4 @@
 <script setup lang="ts" name="ContributeChart">
-import * as echarts from "echarts";
 import { ref, watch, nextTick, computed, useTemplateRef, onMounted } from "vue";
 import { useData } from "vitepress";
 import { formatDate, usePosts, useIntersectionObserver } from "vitepress-theme-teek";
@@ -38,9 +37,9 @@ const { create } = useIntersectionObserver(
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         // 使用 requestAnimationFrame 确保在下一帧执行
-        requestAnimationFrame(() => {
+        requestAnimationFrame(async () => {
           try {
-            renderChart(contributeList.value);
+            await renderChart(contributeList.value);
           } catch (error) {
             console.error("初始化动画失败:", error);
           }
@@ -101,7 +100,8 @@ const option = {
 };
 
 // 渲染贡献图
-const renderChart = (data: any) => {
+const renderChart = async (data: any) => {
+  const echarts = await import("echarts");
   option.calendar.itemStyle.borderColor = isDark.value ? "#1b1b1f" : "#fff";
   option.calendar.itemStyle.color = isDark.value ? "#787878" : "#ebedf0";
 
@@ -116,14 +116,14 @@ watch(
   contributeList,
   async newValue => {
     await nextTick();
-    renderChart(newValue);
+    await renderChart(newValue);
   },
   { flush: "post" }
 );
 
 watch(isDark, async () => {
   await nextTick();
-  renderChart(contributeList.value);
+  await renderChart(contributeList.value);
 });
 
 onMounted(() => {
