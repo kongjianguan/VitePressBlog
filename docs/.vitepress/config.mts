@@ -7,7 +7,7 @@ import { chineseSearchOptimize, pagefindPlugin } from 'vitepress-plugin-pagefind
 import { createRewrites } from "vitepress-theme-teek/config";
 
 export default defineConfig({
-
+  
   title: "kongjianguan",
   description: "个人博客，学习，生活，音乐",
   base: '/',
@@ -66,6 +66,14 @@ export default defineConfig({
             items: [
               { text: '算法', link: '/ACM/Algorithm/' },
             ]
+          },
+          {
+            text: '工具',
+            items: [
+              { text: '教程', link: '/guidance/' },
+              { text: '配置', link: '/configure/' },
+            ],
+            
           },
         ]
       },
