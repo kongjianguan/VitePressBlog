@@ -6,3 +6,6 @@ dist
 
 # cache
 docs/.vitepress/cache
+
+# superpowers internal docs
+docs/superpowers/
